@@ -4,7 +4,7 @@ game.setBackground("floor.png");
 class TicTacToe extends game { 
     constructor() {
         super();
-        this.name = "The Board";
+        this.name = "TheBoard";
         this.image = ("board.png");
         this.x = 300;
         this.y = 85;
@@ -24,8 +24,6 @@ class TicTacToe extends game {
         this.activeMarker = new PrincessMarker(this);
     }
 }
-let theBoard = new TicTacToe();
-theBoard.takeTurns();
 
 class Marker extends game {
     constructor( board, image, name) {
@@ -73,3 +71,5 @@ class PrincessMarker extends Marker {
     }
 }
 
+let TheBoard = new TicTacToe();
+TheBoard.takeTurns();
